@@ -1,0 +1,52 @@
+.heading {
+  color: var(--tone-fg);
+  text-wrap: pretty;
+}
+
+.muted {
+  color: var(--tone-heading-muted);
+}
+
+.semibold {
+  font-weight: var(--weight-semibold);
+}
+
+.medium {
+  font-weight: var(--weight-medium);
+}
+
+.h1 {
+  font-size: var(--text-h1);
+  line-height: var(--leading-h1);
+  letter-spacing: var(--tracking-h1);
+}
+
+.display {
+  font-size: var(--text-display);
+  line-height: var(--leading-display);
+  letter-spacing: var(--tracking-display);
+}
+
+.h2 {
+  font-size: var(--text-h2);
+  line-height: var(--leading-h2);
+  letter-spacing: var(--tracking-h2);
+}
+
+.h2Block {
+  font-size: var(--text-h2-block);
+  line-height: var(--leading-tight);
+  letter-spacing: var(--tracking-h3);
+}
+
+.h3 {
+  font-size: var(--text-h3);
+  line-height: var(--leading-tight);
+  letter-spacing: var(--tracking-h3);
+}
+
+.quote {
+  font-size: var(--text-h2);
+  line-height: var(--leading-quote);
+  letter-spacing: var(--tracking-h2);
+}

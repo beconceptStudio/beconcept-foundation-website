@@ -1,0 +1,56 @@
+.slot {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.r45 {
+  aspect-ratio: 4 / 5;
+}
+
+.r43 {
+  aspect-ratio: 4 / 3;
+}
+
+.r167 {
+  aspect-ratio: 16 / 7;
+}
+
+.image {
+  object-fit: cover;
+}
+
+.placeholder {
+  display: flex;
+  align-items: flex-end;
+  padding: var(--space-md) var(--space-20);
+  background: var(--color-placeholder-img);
+}
+
+.placeholder {
+  container-type: inline-size;
+}
+
+/* Nei riquadri molto stretti (mobile) la didascalia non sta: si nasconde. */
+@container (max-width: 180px) {
+  .caption {
+    display: none;
+  }
+}
+
+.dark {
+  background: var(--color-placeholder-img-alt);
+}
+
+.caption {
+  font-size: var(--text-micro);
+  letter-spacing: var(--tracking-micro);
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+}
+
+@media (max-width: 720px) {
+  .r167 {
+    aspect-ratio: 4 / 3;
+  }
+}

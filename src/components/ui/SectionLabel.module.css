@@ -1,0 +1,5 @@
+.label {
+  font-size: var(--text-label);
+  line-height: var(--leading-body);
+  color: var(--tone-fg-muted);
+}

@@ -1,0 +1,38 @@
+.hero {
+  padding-block: var(--section-y-hero) var(--space-7xl);
+}
+
+.heroLabel {
+  margin-bottom: var(--space-2xl);
+}
+
+.heroTitle {
+  max-width: 1000px;
+  margin-bottom: var(--space-2xl);
+}
+
+.lead {
+  max-width: var(--measure-text);
+  font-size: var(--text-lead);
+  line-height: var(--leading-lead);
+}
+
+.list {
+  padding-block: var(--space-7xl) var(--section-y-lg);
+}
+
+.listHeader {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: var(--space-md);
+  margin-bottom: var(--space-2xl);
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
+  gap: var(--space-4xl) var(--space-lg);
+  padding: 0;
+  list-style: none;
+}

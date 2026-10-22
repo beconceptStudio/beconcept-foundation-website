@@ -1,0 +1,121 @@
+.hero {
+  padding-block: var(--space-6xl) var(--space-4xl);
+}
+
+.back {
+  display: inline-block;
+  padding-block: var(--space-10);
+  margin-bottom: var(--space-xl);
+  font-size: var(--text-label);
+  color: var(--tone-fg-muted);
+  text-decoration: none;
+}
+
+.back:hover {
+  color: var(--tone-fg);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.heroRow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: var(--space-xl);
+}
+
+.heroCopy {
+  max-width: 900px;
+}
+
+.title {
+  margin-bottom: var(--space-lg);
+}
+
+.lead {
+  font-size: var(--text-lead);
+  line-height: var(--leading-lead);
+  color: var(--tone-fg-secondary);
+}
+
+.meta {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2xs);
+  margin: 0;
+  font-size: var(--text-label);
+  color: var(--tone-fg-muted);
+  text-align: right;
+}
+
+.meta dd {
+  margin: 0;
+}
+
+.cover {
+  max-width: var(--container-outer);
+  margin-inline: auto;
+  padding: 0 var(--gutter) var(--section-y);
+}
+
+.blocks {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(380px, 100%), 1fr));
+  gap: var(--space-6xl) var(--space-5xl);
+  padding-bottom: var(--section-y);
+}
+
+.block {
+  padding-top: var(--space-lg);
+  border-top: var(--border-thin) solid var(--tone-rule-strong);
+}
+
+.blockLabel {
+  margin-bottom: var(--space-md);
+}
+
+.blockTitle {
+  margin-bottom: var(--space-md);
+}
+
+.blockText {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  font-size: var(--text-body-lg);
+  color: var(--tone-fg-secondary);
+}
+
+.voiceLabel {
+  margin-bottom: var(--space-xl);
+}
+
+.quote {
+  max-width: 1040px;
+}
+
+.caption {
+  margin-top: var(--space-28);
+  font-size: var(--text-nav);
+  color: var(--tone-fg-muted);
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-xl);
+  padding-block: var(--section-y-hero);
+}
+
+.next {
+  font-size: var(--text-body-lg);
+}
+
+@media (max-width: 720px) {
+  .meta {
+    text-align: left;
+  }
+}

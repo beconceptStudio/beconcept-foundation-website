@@ -1,0 +1,17 @@
+{
+  "slug": "associazione-esempio-4",
+  "published": true,
+  "nome": "[Nome associazione]",
+  "citta": "[Città]",
+  "ambito": "persone",
+  "trimestre": "Q4 2026",
+  "stato": "in-corso",
+  "frase": "[Una frase sul bisogno o sul cambiamento]",
+  "bisogno": "[Il bisogno affrontato, in una frase.]",
+  "chiSono": ["[Cosa fa l'associazione, per chi e perché è importante. Una situazione concreta vale più di una definizione.]"],
+  "daDoveSiamoPartiti": ["[Come ci siamo conosciuti, cosa faticava a comunicare, chi voleva raggiungere.]"],
+  "cosaAbbiamoFatto": ["[Obiettivo concordato, attività e strumenti realizzati, e a cosa servono.]"],
+  "cosaECambiato": ["[Solo risultati documentati, con periodo di riferimento. Se non ci sono ancora dati, raccontare con precisione cosa è stato consegnato.]"],
+  "voce": { "citazione": "[Citazione autentica e autorizzata.]", "nome": "[Nome]", "ruolo": "[ruolo]" },
+  "sostieni": { "url": "https://example.org/" }
+}

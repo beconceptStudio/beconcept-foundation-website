@@ -1,0 +1,65 @@
+.accordion {
+  border-top: var(--border-thin) solid var(--tone-rule-strong);
+}
+
+.item {
+  border-bottom: var(--border-thin) solid var(--color-border);
+}
+
+.summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--space-lg);
+  min-height: var(--control-min);
+  padding-block: var(--space-22);
+  font-size: var(--text-h4);
+  font-weight: var(--weight-semibold);
+  line-height: 1.4;
+  color: var(--tone-fg);
+  cursor: pointer;
+  list-style: none;
+}
+
+.summary::-webkit-details-marker {
+  display: none;
+}
+
+.summary:hover {
+  color: var(--tone-fg-muted);
+}
+
+/* Segno + / − disegnato con due filetti. */
+.icon {
+  position: relative;
+  flex: none;
+  width: 12px;
+  height: 12px;
+}
+
+.icon::before,
+.icon::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  height: var(--border-medium);
+  margin-top: -0.75px;
+  background: currentColor;
+}
+
+.icon::after {
+  transform: rotate(90deg);
+}
+
+.item[open] .icon::after {
+  transform: rotate(0deg);
+}
+
+.answer {
+  max-width: var(--measure-text);
+  margin-top: -8px;
+  padding-bottom: var(--space-22);
+  color: var(--tone-fg-secondary);
+}

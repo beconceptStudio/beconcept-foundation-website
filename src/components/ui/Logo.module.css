@@ -1,0 +1,14 @@
+/* L'altezza si regola con --logo-height sul contenitore (header, footer). */
+.logo {
+  height: var(--logo-height, 28px);
+  width: auto;
+  aspect-ratio: 352 / 80;
+}
+
+.mark {
+  fill: var(--tone-fg);
+}
+
+.arrows {
+  fill: var(--tone-bg);
+}

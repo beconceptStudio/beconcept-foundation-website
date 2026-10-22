@@ -1,0 +1,111 @@
+.heroLabel {
+  margin-bottom: var(--space-2xl);
+}
+
+.heroTitle {
+  max-width: var(--measure-display);
+  margin-bottom: var(--space-2xl);
+}
+
+.lead {
+  max-width: var(--measure-text);
+  font-size: var(--text-lead);
+  line-height: var(--leading-lead);
+}
+
+.media {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-5xl);
+}
+
+.mediaImage {
+  flex: 1 1 440px;
+}
+
+.mediaCopy {
+  flex: 1 1 480px;
+}
+
+.labelSpaced {
+  margin-bottom: var(--space-lg);
+}
+
+.h2Media {
+  margin-bottom: var(--space-xl);
+}
+
+.mediaText {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-18);
+  max-width: 540px;
+  font-size: var(--text-body-lg);
+}
+
+.splitSpaced {
+  margin-bottom: var(--space-6xl);
+}
+
+.splitSpacedSm {
+  margin-bottom: var(--space-5xl);
+}
+
+.criteriaText {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-18);
+  max-width: 720px;
+  margin-top: var(--space-5xl);
+  font-size: var(--text-body-lg);
+}
+
+.twoColumns {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(380px, 100%), 1fr));
+  gap: var(--space-5xl);
+}
+
+.h2Column {
+  margin-bottom: var(--space-28);
+}
+
+.columnText {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  max-width: 540px;
+  font-size: var(--text-body-lg);
+}
+
+.faq {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3xl);
+}
+
+.faqIntro {
+  flex: 1 1 320px;
+}
+
+.faqList {
+  flex: 2 1 560px;
+}
+
+.closing {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-xl);
+}
+
+@media (max-width: 720px) {
+  .mediaImage,
+  .mediaCopy,
+  .faqIntro,
+  .faqList {
+    flex-basis: 100%;
+  }
+}

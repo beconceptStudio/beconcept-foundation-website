@@ -1,0 +1,164 @@
+/*
+ * Design token di Be Foundation (design-reference/README.md).
+ * Ogni valore di colore, tipografia e spaziatura usato nei componenti passa da qui.
+ */
+:root {
+  /* Colori: solo nero, bianco e grigi */
+  --color-ink: #111111;
+  --color-paper: #ffffff;
+  --color-surface: #f2f2f2;
+  --color-heading-muted: #8c8c8c;
+  --color-text-secondary: #444444;
+  --color-text-muted: #5c5c5c;
+  --color-border: #e0e0e0;
+  --color-border-strong: #adadad;
+  --color-placeholder-img: #e6e6e6;
+  --color-placeholder-img-alt: #dcdcdc;
+  --color-on-dark-text: #d9d9d9;
+  --color-on-dark-muted: #a3a3a3;
+  --color-on-dark-border: #333333;
+
+  /* Font */
+  --font-sans: var(--font-suisse), system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
+
+  /* Scala tipografica */
+  --text-h1: clamp(48px, 6vw, 88px);
+  --text-display: clamp(36px, 4.4vw, 64px);
+  --text-h2: clamp(32px, 3.4vw, 48px);
+  --text-h2-block: 28px;
+  --text-email: clamp(28px, 3vw, 40px);
+  --text-h3: 22px;
+  --text-h3-sm: 20px;
+  --text-h4: 18px;
+  --text-step-number: 40px;
+  --text-lead: 21px;
+  --text-body-xl: 20px;
+  --text-body-lg: 18px;
+  --text-body: 17px;
+  --text-body-sm: 16px;
+  --text-nav: 15px;
+  --text-meta: 13px;
+  --text-label: 14px;
+  --text-micro: 12px;
+
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+
+  --leading-h1: 0.98;
+  --leading-display: 1.05;
+  --leading-display-tight: 1.02;
+  --leading-h2: 1.05;
+  --leading-quote: 1.1;
+  --leading-lead: 1.5;
+  --leading-body: 1.6;
+  --leading-tight: 1.1;
+  --leading-none: 1;
+
+  --tracking-h1: -0.04em;
+  --tracking-display: -0.035em;
+  --tracking-h2: -0.03em;
+  --tracking-h3: -0.02em;
+  --tracking-step: -0.04em;
+  --tracking-micro: 0.06em;
+
+  /* Layout */
+  --container-max: 1360px;
+  /* Il design usa max-width 1360px in content-box: il contenuto è largo 1360px più i gutter. */
+  --container-outer: calc(var(--container-max) + 2 * var(--gutter));
+  --gutter: 40px;
+  --section-y: 120px;
+  --section-y-hero: 96px;
+  --section-y-lg: 140px;
+  --measure-text: 640px;
+  --measure-wide: 820px;
+  --measure-display: 1100px;
+
+  /* Spaziature ricorrenti */
+  --space-3xs: 4px;
+  --space-2xs: 6px;
+  --space-xs: 8px;
+  --space-sm: 12px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+  --space-2xl: 40px;
+  --space-3xl: 48px;
+  --space-4xl: 56px;
+  --space-5xl: 64px;
+  --space-6xl: 72px;
+  --space-7xl: 80px;
+  /* Valori intermedi usati dal design (padding di card, box e righe) */
+  --space-10: 10px;
+  --space-14: 14px;
+  --space-18: 18px;
+  --space-20: 20px;
+  --space-22: 22px;
+  --space-28: 28px;
+  --space-36: 36px;
+
+  /* Forme */
+  --radius-pill: 999px;
+  --radius-input: 8px;
+  --border-thin: 1px;
+  --border-medium: 1.5px;
+  --border-thick: 2px;
+
+  /* Controlli */
+  --control-min: 44px;
+  --button-min: 48px;
+  --button-min-lg: 56px;
+  --input-min: 52px;
+  --focus-ring: 2px solid var(--color-ink);
+  --focus-offset: 3px;
+  --underline-offset: 6px;
+  --header-height: 92px;
+}
+
+/*
+ * Toni di sezione: i componenti usano solo questi alias,
+ * così lo stesso componente funziona su fondo chiaro, grigio e scuro.
+ */
+:root,
+[data-tone="light"] {
+  --tone-bg: var(--color-paper);
+  --tone-fg: var(--color-ink);
+  --tone-fg-body: var(--color-ink);
+  --tone-fg-secondary: var(--color-text-secondary);
+  --tone-fg-muted: var(--color-text-muted);
+  --tone-heading-muted: var(--color-heading-muted);
+  --tone-rule: var(--color-border);
+  --tone-rule-strong: var(--color-ink);
+  --tone-button-bg: var(--color-ink);
+  --tone-button-fg: var(--color-paper);
+}
+
+[data-tone="surface"] {
+  --tone-bg: var(--color-surface);
+  --tone-rule: var(--color-border-strong);
+}
+
+[data-tone="dark"] {
+  --tone-bg: var(--color-ink);
+  --tone-fg: var(--color-paper);
+  --tone-fg-body: var(--color-on-dark-text);
+  --tone-fg-secondary: var(--color-on-dark-text);
+  --tone-fg-muted: var(--color-on-dark-muted);
+  --tone-rule: var(--color-on-dark-border);
+  --tone-rule-strong: var(--color-paper);
+  --tone-button-bg: var(--color-paper);
+  --tone-button-fg: var(--color-ink);
+  --focus-ring: 2px solid var(--color-paper);
+}
+
+@media (max-width: 720px) {
+  :root {
+    --gutter: 20px;
+    --section-y: 72px;
+    --section-y-hero: 56px;
+    --section-y-lg: 88px;
+    --text-lead: 19px;
+    --text-body-xl: 18px;
+    --header-height: 72px;
+  }
+}

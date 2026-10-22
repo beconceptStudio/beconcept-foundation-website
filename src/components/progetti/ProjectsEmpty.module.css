@@ -1,0 +1,39 @@
+.empty {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: var(--space-2xl);
+}
+
+.copy {
+  max-width: var(--measure-text);
+}
+
+.text {
+  margin-top: var(--space-lg);
+  font-size: var(--text-body-xl);
+}
+
+.action {
+  margin-top: var(--space-lg);
+}
+
+/* Riquadri tratteggiati: i posti dei progetti in arrivo (decorativi). */
+.slots {
+  display: flex;
+  gap: var(--space-10);
+}
+
+.slots span {
+  width: 120px;
+  height: 160px;
+  border: var(--border-medium) dashed var(--color-border-strong);
+}
+
+@media (max-width: 720px) {
+  .slots span {
+    width: 72px;
+    height: 96px;
+  }
+}

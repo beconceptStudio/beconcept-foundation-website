@@ -1,0 +1,14 @@
+.link {
+  display: inline-block;
+  min-height: var(--control-min);
+  padding-block: var(--space-10);
+  color: var(--tone-fg);
+  font-weight: var(--weight-semibold);
+  text-decoration: underline;
+  text-decoration-thickness: var(--border-medium);
+  text-underline-offset: var(--underline-offset);
+}
+
+.link:hover {
+  color: var(--tone-fg-muted);
+}

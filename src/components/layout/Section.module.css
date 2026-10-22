@@ -1,0 +1,47 @@
+.section {
+  background: var(--tone-bg);
+  color: var(--tone-fg-body);
+}
+
+.ruled {
+  border-top: var(--border-thin) solid var(--tone-rule);
+}
+
+.inner {
+  max-width: var(--container-outer);
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+}
+
+.default {
+  padding-block: var(--section-y);
+}
+
+.hero {
+  padding-block: var(--section-y-hero) var(--section-y);
+}
+
+.split {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-lg) var(--space-3xl);
+}
+
+.splitLabel {
+  flex: 1 1 260px;
+}
+
+.splitContent {
+  flex: 3 1 640px;
+  max-width: var(--measure-wide);
+}
+
+.splitContentWide {
+  max-width: none;
+}
+
+@media (max-width: 720px) {
+  .splitContent {
+    flex-basis: 100%;
+  }
+}
